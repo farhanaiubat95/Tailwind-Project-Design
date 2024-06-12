@@ -7,36 +7,46 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="w-screen min-h-screen bg-gray-300 font-serif flex justify-center items-center">
-        <div>
-            <!-- div-1 -->
-            <div>
-                <img class="h-20 w-20" src="../image/p1.jpg" alt="">
-                <p>Coding like poetry should be short and concise. ― Santosh Kalwar</p>
-                <p>Registration is open. Please quickly sign in.</p>
-            </div>
+  <div class="w-screen min-h-screen bg-gray-400 flex justify-center items-center">
+    <div class="card max-w-5xl w-full mx-auto bg-white p-5 flex justify-center gap-5 text-white shadow-2xl rounded-lg font-serif">
+        <div class="w-1/2 bg-indigo-800/75 rounded-lg flex justify-center items-center">
+           <div class="flex flex-col justify-center items-center  p-6">
+            <img class="h-28 w-28 rounded-full" src="../image/p2.png" alt="">
+            <p class="py-6 px-2 text-lg font-bold">Coding like poetry should be short and concise. ― Santosh Kalwar</p>
+            <p class="px-2 text-sm text-center text-gray-300">Registration is open. Please complete the registration process.</p>
+           </div>
+        </div>
 
-            <!-- div-2 -->
-            <div>
-                <h4>Get Registered</h4>
-                <h5>Fill up all the details</h5>
-                <form action="#">
-                    <div>
-                        <label >Full Name :</label>
-                        <input type="text" placeholder="give your full name">
-                    
+        <div class="w-1/2 bg-black/25 rounded-lg p-6">
+            <h4 class="text-xl font-bold font-serif">Get Started</h4>
+            <h5 class="text-sm text-gray-400">Fill up the form with details</h5>
+            <form action="#" class="my-10">
+                <div class="bg-black/25 rounded-lg py-4 px-2">
+                  <label class="mb-4 block ">Full Name :</label>
+                   <input class="w-full px-4 py-1 bg-transparent border border-gray-400 rounded-md focus:outline-none placeholder:text-sm placeholder:text-gray-300 text-white" type="text" placeholder="give your full name">
+                </div>
 
-                    </div>  
+                <div class="bg-black/25 rounded-lg py-4 px-2">
+                    <label class="mb-4 block ">Phone number :</label>
+                     <input class="w-full px-4 py-1 bg-transparent border border-gray-400 rounded-md focus:outline-none placeholder:text-sm placeholder:text-gray-300 text-white" type="number" placeholder="must 11 digits">
+                  </div>
 
-                    <div>
-                        <button>Register</button>
-                    </div>
+                  <div class="bg-black/25 rounded-lg py-4 px-2">
+                    <label class="mb-4 block ">Email :</label>
+                     <input class="w-full px-4 py-1 bg-transparent border border-gray-400 rounded-md focus:outline-none placeholder:text-sm placeholder:text-gray-300 text-white" type="text" placeholder="emailid@gmail.com">
+                  </div>
 
+                  <div class="bg-black/25 rounded-lg py-4 px-2">
+                    <label class="mb-4 block ">Permanent Address :</label>
+                     <input class="w-full px-4 py-1 bg-transparent border border-gray-400 rounded-md focus:outline-none placeholder:text-sm placeholder:text-gray-300 text-white" type="text" placeholder="full Address">
+                  </div>
 
-                </form>
-                <p>Already a member? <span class="font-bold text-indigo-600 "><a href="#">Sign in</a></span></p>
-            </div>
+                <div>
+                    <button>Register</button>
+                </div>
+            </form>
         </div>
     </div>
+  </div>
 </body>
 </html>

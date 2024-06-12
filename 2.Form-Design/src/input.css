@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card{
+    background:url(../image/b2.jpg);
+}
