@@ -4,5 +4,5 @@
 
 
 .common-class{
-    @apply bg-[#C39898]/50 p-4 rounded-xl border-2 border-[#BC5A94]
+    @apply bg-[#C39898]/50 p-2 px-4 rounded-xl border-2 border-[#BC5A94]
 }
