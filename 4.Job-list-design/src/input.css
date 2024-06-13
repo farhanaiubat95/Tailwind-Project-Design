@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.common-header{
+    @apply w-full h-20 md:h-36 bg-[#006769] flex justify-center items-center text-[#6DC5D1] text-3xl md:text-5xl font-serif shadow-lg shadow-[#006769]/50 mb-16
+}
 .common-box{
-    @apply max-w-5xl w-full mx-auto bg-white p-4 flex justify-between rounded-lg border-l-2  border-l-[#006769] transition duration-150 ease-out hover:ease-in hover:scale-105  shadow-lg shadow-[#006769]/50
+    @apply relative md:static max-w-5xl w-full mx-auto bg-white p-4 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-8 rounded-lg border-l-2  border-l-[#006769] transition duration-150 ease-out hover:ease-in hover:scale-105  shadow-lg shadow-[#006769]/50
 }
 
+.common-inner-div1{
+    @apply flex gap-3 items-center w-full md:w-1/2 border-b-2 pb-5 md:pb-0 md:border-none
+}
+
+.common-inner-div2{
+    @apply flex gap-3 flex-wrap items-center w-full md:w-1/2 md:justify-end
+}
+
+.common-img{
+    @apply absolute md:static -top-12 left-7 border-[3px] border-[#006769] rounded-full w-28 h-28 
+}
 .common-btn{
     @apply px-3 text-[13px] rounded-xl text-white
 }
@@ -17,3 +31,4 @@
 .common-btn1{
     @apply py-2  px-4 rounded-md text-[#006769] font-bold bg-[#006769]/25 font-sans text-sm hover:text-white hover:bg-[#006769] 
 }
+
