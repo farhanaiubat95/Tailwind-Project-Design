@@ -7,3 +7,10 @@
       x.style.display = "none";
     }
   }
+
+const navToggle = document.querySelector(".menu-toggle");
+navToggle.addEventListener('click', navTogo);
+
+function navTogo(){
+  console.log('hi')
+}

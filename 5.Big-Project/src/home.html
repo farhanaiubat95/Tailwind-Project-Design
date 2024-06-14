@@ -11,22 +11,26 @@
 </head>
 <body>
    <div class="w-screen min-h-screen bg-5th font-roboto">
-      <!-- div1 Start -->
-      <div class="w-full banner">
-        <!-- inner-div-1 start-->
-        <div class="w-full bg-black/10">
-            <div class="max-w-5xl mx-auto flex justify-between py-2">
-              <div>
-                <img class="h-[80px] w-[80px]" src="../image/logo1.png" alt="">
-              </div>
-              <div class="flex justify-end items-center gap-5 font-bold text-primary text-lg relative">
+      <!-- Nav Start -->
+      <div class="w-full bg-3rd md:bg-black/10 fixed top-0 shadow-xl">
+        <div class="w-full md:max-w-5xl mx-auto flex  justify-between items-center px-5 py-2 md:py-3 md:px-0 relative">
+          <div>
+            <img class="h-[80px] w-[85px]" src="../image/logo1.png" alt="">
+          </div>
+                   
+          <!-- Menu Button -->
+          <button type="button" class="menu-toggle text-4xl hover:scale-125 text-primary md:hidden"><i class='bx bx-menu'></i></button>
+          <!-- Menu Button -->
+ 
+          <div id="menu md:m" class="absolute w-full right-0 top-[96px] md:bg-transparent  md:static shadow-xl md:shadow-none translate-x-full md:translate-x-0">
+            <div class="flex flex-col md:flex-row justify-end items-center md:gap-5 font-bold text-primary text-lg relative  bg-primary md:bg-transparent">
                 <div class="nav"><a href="#">Home</a></div>
                 <div class="nav"><a href="#">Services</a></div>
                 <div class="nav"><a href="#">Eligibility</a></div>
                 <div class="nav"><a href="#">Rules</a></div>
                 <div class="nav"><a href="#">About Us</a></div>
                 <div class="nav"><a href="#">Contact Us</a></div>
-                <div id="btn-login" class="nav bg-primary text-Secondary hover:bg-Secondary hover:text-primary"><button onclick="navlog()">Login</button></div>
+                <div id="btn-login" class="btn-login"><button onclick="navlog()">Login</button></div>
                 <div id="btn-log" class="btn-log-visible">
                     <div class="flex gap-2">
                         <div class="nav-log"><a href="#">User Login</a></div>
@@ -34,57 +38,62 @@
                         </div>
                 </div>
               </div>
+          </div>
+        </div>
+      </div>
+     <!-- Nav Start -->
+
+      <!-- div1 Start -->
+      <div class=" banner pt-40 ">
+        <!-- inner-div-1 start-->
+        <div class="max-w-5xl mx-auto flex pt-60 pb-40 items-center">
+            <div class="font-bold">
+                <h1 class="text-5xl"><span class="text-primary font-bold">Sunnah</span> Old Age Home</h1>
+            <p class="text-2xl pt-1 pb-10 text-primary/75">That will make you feel like your own</p>
+            <a class=" p-3 bg-primary  text-sm text-4th border-2 border-primary hover:bg-transparent hover:text-primary" href="#">Registration Now</a>
             </div>
         </div>
         <!-- inner-div-1 start-->
 
         <!-- inner-div-2 start-->
-        <div>
-            <h1><span class="text-primary font-bold">Sunnah</span>Old Age Home</h1>
-            <p>That will make you feel like your own</p>
-            <a href="#">Registration Now</a>
-        </div>
-        <!-- inner-div-2 start-->
-
-        <!-- inner-div-3 start-->
-        <div>
+        <div class="max-w-5xl mx-auto flex p-5 items-center gap-2 bg-primary">
             <!-- donate part1 Start-->
-            <div>
-                <div>
-                    <i class='bx bxs-donate-heart'></i>
+            <div class="flex gap-3 text-Secondary mx-2">
+                <div class="font-bold ">
+                    <i class='text-2xl bx bxs-donate-heart'></i>
                 </div>
-                <div>
-                    <h5>Give Donation</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ex.</p>
+                <div class="flex flex-col flex-wrap">
+                    <h5 class="font-bold text-lg">Give Donation</h5>
+                    <p class="text-sm pr-3 text-6th">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ex.</p>
                 </div>
             </div>
             <!-- donate part1 end -->
 
             <!-- donate part2 Start-->
-            <div>
-                <div>
-                    <i class='bx bxs-donate-heart'></i>
+            <div class="flex gap-3 text-Secondary mx-2 border-x-2 border-x-6th px-4">
+                <div class="font-bold ">
+                    <i class='text-2xl bx bxs-donate-heart'></i>
                 </div>
-                <div>
-                    <h5>Give Donation</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ex.</p>
+                <div class="flex flex-col flex-wrap">
+                    <h5 class="font-bold text-lg">Give Donation</h5>
+                    <p class="text-sm pr-9 text-6th">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ex.</p>
                 </div>
             </div>
             <!-- donate part2 end -->
 
             <!-- donate part3 Start-->
-            <div>
-                <div>
-                    <i class='bx bxs-donate-heart'></i>
+            <div class="flex gap-3 text-Secondary mx-2">
+                <div class="font-bold ">
+                    <i class='text-2xl bx bxs-donate-heart'></i>
                 </div>
-                <div>
-                    <h5>Give Donation</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ex.</p>
+                <div class="flex flex-col flex-wrap">
+                    <h5 class="font-bold text-lg">Give Donation</h5>
+                    <p class="text-sm pr-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ex.</p>
                 </div>
             </div>
             <!-- donate part3 end -->
         </div>
-        <!-- inner-div-3 start-->
+        <!-- inner-div-2 start-->
       </div>
       <!-- div2 end -->
    </div>
