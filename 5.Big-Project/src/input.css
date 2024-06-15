@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 .nav{
-    @apply hover:scale-105 transition duration-300 ease-out hover:ease-in w-full md:w-auto  text-center  text-Secondary  hover:bg-Secondary/25 border-b md:border-none py-1 md:py-1  md:px-2   md:text-primary  md:hover:bg-primary md:hover:text-Secondary 
+    @apply hover:scale-105 transition duration-300 ease-out hover:ease-in w-full md:w-auto  text-center   text-Secondary  hover:bg-Secondary/25 border-b md:border-none py-1 md:py-1  md:px-2   md:text-primary  md:hover:bg-primary md:hover:text-Secondary 
 }
     
+.navbar{
+    @apply absolute w-full right-0 top-[96px] md:bg-transparent  md:static shadow-xl md:shadow-none  transition duration-300 ease-out hover:ease-in translate-x-full md:translate-x-0
+}
 
 
 .nav-log{
@@ -21,7 +24,13 @@
     background-repeat: no-repeat;
     background-size: cover;
    
+    @apply pt-20
 }
 .btn-login{
     @apply hover:scale-105 transition duration-300 ease-out hover:ease-in  w-full md:w-auto text-center p-1 md:px-2 border-b md:border-none hover:border-b-primary bg-primary text-Secondary hover:bg-Secondary/25 md:hover:text-primary
 }
+
+.active .navbar{
+    @apply translate-x-0 opacity-1 
+}
+

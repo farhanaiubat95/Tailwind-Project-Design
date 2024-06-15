@@ -8,9 +8,16 @@
     }
   }
 
-const navToggle = document.querySelector(".menu-toggle");
-navToggle.addEventListener('click', navTogo);
+/*===================================
+   Nav Toggle icon for mobile version
+=====================================*/ 
+const nav_btn = document.querySelector(".nav-btn");
+const mob_nav = document.querySelector(".header");
+const toggleNavbar = () => {
+ 
+  mob_nav.classList.toggle("active");
+  
 
-function navTogo(){
-  console.log('hi')
-}
+};
+
+nav_btn .addEventListener('click', () => toggleNavbar());

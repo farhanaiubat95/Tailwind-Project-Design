@@ -554,10 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -585,18 +581,6 @@ video {
 
 .h-28 {
   height: 7rem;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.max-h-screen {
-  max-height: 100vh;
 }
 
 .min-h-screen {
@@ -799,6 +783,9 @@ video {
 
 .card{
   background:url(../image/b2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .placeholder\:text-sm::-moz-placeholder {
