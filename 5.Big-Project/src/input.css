@@ -23,14 +23,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   
-    @apply pt-20
+
 }
 .btn-login{
     @apply hover:scale-105 transition duration-300 ease-out hover:ease-in  w-full md:w-auto text-center p-1 md:px-2 border-b md:border-none hover:border-b-primary bg-primary text-Secondary hover:bg-Secondary/25 md:hover:text-primary
 }
 
 .active .navbar{
-    @apply translate-x-0 opacity-1 
+    @apply translate-x-0 
 }
 

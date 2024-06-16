@@ -671,12 +671,20 @@ video {
   background-color: rgb(14 96 110 / var(--tw-bg-opacity));
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .px-4 {
@@ -692,6 +700,16 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-10 {
@@ -714,12 +732,20 @@ video {
   padding-top: 0.25rem;
 }
 
-.pt-40 {
-  padding-top: 10rem;
-}
-
 .pt-60 {
   padding-top: 15rem;
+}
+
+.pt-72 {
+  padding-top: 18rem;
+}
+
+.pt-80 {
+  padding-top: 20rem;
+}
+
+.pb-52 {
+  padding-bottom: 13rem;
 }
 
 .font-roboto {
