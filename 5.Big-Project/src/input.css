@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.navbar{
+    @apply  w-full transition duration-500 ease-out hover:ease-in md:w-auto text-center fixed top-24 left-0 md:static bg-primary md:bg-transparent translate-x-full md:translate-x-0
+}
+.navbar-inner{
+    @apply w-full flex flex-col md:flex-row md:gap-3 md:items-center font-bold text-xl 
+}
+.nav{
+    @apply w-auto hover:scale-105 transition duration-300 ease-out hover:ease-in py-4 md:py-1 px-2 border-b-2  text-Secondary md:text-primary hover:bg-3rd/25 md:hover:bg-primary md:hover:text-Secondary md:border-2 md:border-transparent
+}
+.login{
+    @apply hover:scale-105 transition duration-300 ease-out hover:ease-in w-auto py-4 md:py-1 px-2 md:hover:bg-primary hover:bg-3rd/25 md:border-2 md:hover:border-primary md:border-transparent md:bg-primary md:hover:bg-transparent text-Secondary md:hover:text-primary
+}
+.nav1{
+    @apply hover:scale-105 transition duration-300 ease-out hover:ease-in w-auto py-4 md:py-1 px-2 hover:bg-primary border-t-2 border-t-white md:border-2 md:hover:border-primary md:border-transparent md:bg-primary md:hover:bg-transparent text-Secondary md:hover:text-primary 
+}
+
+#btn-log2{
+    @apply flex flex-col md:flex-row gap-2 justify-between 
+}
+
+.active .btn-log2{
+    @apply block
+}
+.active1 .navbar{
+    @apply translate-x-0
+}
+
+
+
+
+.banner{
+    background:url(../image/h1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.active1 .banner-card{
+    @apply opacity-5 
+}
