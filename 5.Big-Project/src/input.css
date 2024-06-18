@@ -34,8 +34,9 @@
     @apply block
 }
 
-.active1 .banner,.active1 .service{
-    @apply hidden md:block
+
+.active1 .banner-card{
+    @apply hidden 
 }
 .active1 .navbar{
     @apply translate-x-0
@@ -53,7 +54,7 @@
     background-size: cover;
 }
 .common-title{
-    @apply flex justify-center items-center font-bold text-5xl text-primary pb-5 md:pb-24
+    @apply flex justify-center items-center font-bold text-6xl text-primary pb-5 md:pb-24
 }
 .service-card{
     @apply flex gap-3 bg-white transition duration-500 hover:scale-110 md:hover:scale-100
