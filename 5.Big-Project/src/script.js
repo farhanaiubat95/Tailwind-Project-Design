@@ -2,8 +2,8 @@
    Nav Login Button Toggle for mobile version
 ============================================*/ 
 
-const login_btn = document.querySelector(".btn-log1");
-const navbar = document.querySelector(".navbar");
+const login_btn = document.querySelector(".login");
+const navbar = document.querySelector(".body");
 const toggleLogin = ()=>{
  navbar.classList.toggle("active");
 };

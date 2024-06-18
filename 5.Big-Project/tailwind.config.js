@@ -18,5 +18,18 @@ module.exports = {
 
     },
   },
-  plugins: [],
+  plugins: [
+    function ({addUtilities}) {
+      const newUtilities = {
+       ".not-scrollbar::-webkit-scrollbar":{
+          display:"none",
+       },
+       ".not-scrollbar":{
+        "-ms-overflow-style":"none",
+        "scrollbar-width":"none",
+       },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 }

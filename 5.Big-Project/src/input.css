@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 
-
+.no-scrollbar::-webkit-scrollbar{
+    display:nono;
+}
+.no-scrollbar{
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
 .navbar{
     @apply  w-full transition duration-500 ease-out hover:ease-in md:w-auto text-center fixed top-24 left-0 md:static bg-primary md:bg-transparent translate-x-full md:translate-x-0
 }
@@ -32,7 +38,9 @@
 }
 
 
-
+.banner-card{
+    @apply flex flex-col md:flex-row p-3 md:py-10 md:px-5  md:items-center  bg-primary mx-10 md:mx-0 fixed top-[430px]  md:static
+}
 
 .banner{
     background:url(../image/h1.jpg);
@@ -42,4 +50,8 @@
 }
 .active1 .banner-card{
     @apply opacity-5 
+}
+
+.common-title{
+    @apply flex justify-center items-center font-bold text-5xl text-primary pb-24
 }
