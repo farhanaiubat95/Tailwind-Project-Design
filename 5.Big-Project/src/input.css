@@ -54,7 +54,7 @@
     background-size: cover;
 }
 .common-title{
-    @apply flex justify-center items-center font-bold text-4xl  text-primary pb-5 md:pb-24
+    @apply flex justify-center items-center font-bold text-4xl xl:text-5xl  text-primary pb-5 md:pb-24
 }
 .service-card{
     @apply flex gap-3 bg-white transition duration-500 hover:scale-110 md:hover:scale-100
@@ -69,4 +69,10 @@
 
 .footer-icon{
     @apply text-xl text-Secondary  hover:text-2xl transition duration-500 ease-out hover:ease-in
+}
+.contact-image{
+    background:url(../image/contact1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
