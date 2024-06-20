@@ -59,3 +59,14 @@
 .service-card{
     @apply flex gap-3 bg-white transition duration-500 hover:scale-110 md:hover:scale-100
 }
+
+.about-image{
+    background:url(../image/about.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-icon{
+    @apply text-xl text-Secondary  hover:text-2xl transition duration-500 ease-out hover:ease-in
+}
