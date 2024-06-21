@@ -90,3 +90,9 @@
 .submit-btn{
     @apply text-lg text-primary hover:text-Secondary font-bold py-1 rounded-md bg-Secondary text-center border-2 border-transparent hover:border-Secondary hover:bg-transparent
 }
+.login-image{
+    background:url(../image/admin-log.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
