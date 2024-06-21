@@ -42,6 +42,10 @@
     @apply translate-x-0
 }
 
+.active3 .navbar1{
+    @apply bg-3rd
+}
+
 
 .banner-card{
     @apply flex flex-col md:flex-row py-2 md:py-10 md:px-5  md:items-center  bg-primary mx-10 md:mx-0 absolute top-80 sm:left-16  md:static

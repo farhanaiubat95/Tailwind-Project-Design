@@ -13,7 +13,7 @@ login_btn.addEventListener('click', () => toggleLogin());
 
 
 /*===================================
-   Nav Toggle icon for mobile version
+   Nav Toggle icon toggle for mobile version
 =====================================*/ 
 const menu_btn = document.querySelector(".nav-btn");
 const nav_bar = document.querySelector(".body");
@@ -22,4 +22,18 @@ const toggleMenuBtn = ()=>{
 };
 
 menu_btn.addEventListener('click', () => toggleMenuBtn());
+
+
+/*===========================================
+   Nav background color change when scrolling
+============================================*/ 
+const navEl = document.querySelector('.body');
+
+window.addEventListener('scroll', () => {
+ if(window.scrollY >= 100){
+   navEl.classList.add('active3')
+ }else if(window.scrollY < 100){
+   navEl.classList.remove('active3')
+ }
+});
 
