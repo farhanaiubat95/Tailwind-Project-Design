@@ -25,15 +25,15 @@
         <!--==== SideBar Start ===-->
         <aside class="bg-black h-12 md:h-auto flex-none md:w-[240px] text-white md:absolute md:left-0 md:bottom-0 md:top-0 relative">
             <!-- dash menu button start-->
-            <div class=" px-2 pt-1 leading-10 block md:hidden"><button type="button" class="sidebarbtn m-1"><i class="hover:border px-2 text-2xl hover:scale-110 fa-solid fa-bars"></i></button></div>
+            <div  class=" px-2 pt-1 leading-10 block md:hidden"><button type="button" class="btn m-1"><i class="hover:border px-2 text-2xl hover:scale-110 fa-solid fa-bars"></i></button></div>
             <!-- dash menu button end-->
 
-            <div class="sidebar w-[240px] bg-black absolute top-12 left-0 -translate-x-64 md:-translate-x-0 md:static ">
+            <div class="sidebar w-[240px] bg-black absolute top-12 left-0 transition duration-500 ease-out  -translate-x-64 md:-translate-x-0 md:static ">
              <!-- sidebar Header Start-->
-              <div class="flex flex-col justify-center items-center py-7 border-b border-b-gray-300">
-                <img class="h-20 w-20 rounded-full border-2" src="../image/Arif.jpg" alt="">
-                <h1 class="text-lg">Farhana Bente Islam</h1>
-                <span><i class="text-[#41B06E] text-sm fa fa-circle"></i> Online</span>
+              <div class="flex flex-col justify-center gap-1 items-center py-7 border-b border-b-gray-300">
+                <img class="h-16 w-16 md:h-20 md:w-20 rounded-full border-2 block" src="../image/Arif.jpg" alt="">
+                <h1 class="md:text-lg mt-3">Farhana Bente Islam</h1>
+                <span class="text-sm"><i class="text-[#41B06E] text-sm fa fa-circle"></i> Online</span>
               </div>
              <!-- sidebar Header Start-->
             
@@ -42,14 +42,14 @@
              <!-- Sidebar Nav Start-->
              <div class=" mt-5 flex flex-col h-[600px] overflow-y-scroll no-scrollbar">
                <div>
-                <div class="text-center py-2 border border-transparent hover:bg-gray-400/25 hover:border-gray-700  scale-105"><a href="#"><i class='bx bxs-dashboard'></i><span class="pl-1">Dashboard</span></a></div>
-                <div class="text-center py-2 border border-transparent hover:bg-gray-400/25 hover:border-gray-700  scale-105"><a href="#"><i class='bx bx-male-female'></i><span class="pl-1">SC Details</span></a></div>
-                <div class="text-center py-2 border border-transparent hover:bg-gray-400/25 hover:border-gray-700  scale-105"><a href="#"><i class="fas fa-user-md"></i><span class="pl-1">Doctor</span></a></div>
-                <div class="text-center py-2 border border-transparent hover:bg-gray-400/25 hover:border-gray-700  scale-105"><a href="#"><i class="fa-solid fa-user-nurse"></i><span class="pl-1">Caregiver</span></a></div>
-                <div class="text-center py-2 border border-transparent hover:bg-gray-400/25 hover:border-gray-700  scale-105"><a href="#"><i class="fa-solid fa-user-check"></i><span class="pl-1">Admin Details</span></a></div>
-                <div class="text-center py-2 border border-transparent hover:bg-gray-400/25 hover:border-gray-700  scale-105"><a href="#"><i class='bx bxs-food-menu'></i><span class="pl-1">Services</span></a></div>
-                <div class="text-center py-2 border border-transparent hover:bg-gray-400/25 hover:border-gray-700  scale-105"><a href="#"><i class='bx bxs-building-house'></i><span class="pl-1">Rooms</span></a></div>
-                <div class="text-center py-2 border border-transparent hover:bg-gray-400/25 hover:border-gray-700  scale-105"><a href="#"><i class='bx bxs-report' ></i><span class="pl-1">Reports</span></a></div>
+                <div class="sidebarnav"><a href="dashboard.html"><i class='bx bxs-dashboard'></i><span class="pl-1">Dashboard</span></a></div>
+                <div class="sidebarnav"><a href="all-citizen.html"><i class='bx bx-male-female'></i><span class="pl-1">Citizen Details</span></a></div>
+                <div class="sidebarnav"><a href="all-doctors.html"><i class="fas fa-user-md"></i><span class="pl-1">Doctor</span></a></div>
+                <div class="sidebarnav"><a href="all-caregiver.html"><i class="fa-solid fa-user-nurse"></i><span class="pl-1">Caregiver</span></a></div>
+                <div class="sidebarnav"><a href="all-admin.html"><i class="fa-solid fa-user-check"></i><span class="pl-1">Admin Details</span></a></div>
+                <div class="sidebarnav"><a href="all-Services.html"><i class='bx bxs-food-menu'></i><span class="pl-1">Services</span></a></div>
+                <div class="sidebarnav"><a href="all-Rooms.html"><i class='bx bxs-building-house'></i><span class="pl-1">Rooms</span></a></div>
+                <div class="sidebarnav"><a href="all-Reports.html"><i class='bx bxs-report' ></i><span class="pl-1">Reports</span></a></div>
                </div>
              </div>
              <!-- Sidebar Nav End-->
@@ -192,6 +192,15 @@
     <!--=====================
          Custom JS Start
     ======================-->  
-    <script src="./script.js"></script>
+    <script>
+        /*============================================
+            Dashboard Sidebar-btn toggle Mobile Version
+        ==============================================*/ 
+            let btn =document.querySelector('.btn');
+            let sidebar = document.querySelector('.body');
+            btn.onclick= function(){
+                sidebar.classList.toggle("active4");
+            }
+    </script>
  </body>
 </html>

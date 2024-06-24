@@ -2,26 +2,22 @@
    Nav Login Button Toggle for mobile version
 ============================================*/ 
 
-const login_btn = document.querySelector(".login");
-const navbar = document.querySelector(".body");
-const toggleLogin = ()=>{
- navbar.classList.toggle("active");
-};
-
-login_btn.addEventListener('click', () => toggleLogin());
-
+let login_btn = document.querySelector('.login');
+let navbar = document.querySelector('.body');
+login_btn.onclick= function(){
+   navbar.classList.toggle("active");
+  };
+  
 
 
 /*===================================
    Nav Toggle icon toggle for mobile version
 =====================================*/ 
-const menubtn = document.querySelector(".navbtn");
-const nav_bar = document.querySelector(".navbar");
-const toggleMenuBtn = ()=>{
+const menubtn = document.querySelector('.navbtn');
+const nav_bar = document.querySelector('.body');
+menubtn.onclick= function(){
    nav_bar.classList.toggle("active1");
-};
-
-menubtn.addEventListener('click', () => toggleMenuBtn());
+  };
 
 
 /*===========================================
@@ -38,14 +34,4 @@ window.addEventListener('scroll', () => {
 });
 
 
-/*============================================
-   Dashboard Sidebar-btn toggle Mobile Version
-==============================================*/ 
 
-const Sidebarbtn = document.querySelector(".sidebarbtn");
-const Sidebar= document.querySelector(".body");
-const myside = () => {
-   alert("dsfd");
-};
-
-Sidebarbtn.addEventListener('click', () => myside());

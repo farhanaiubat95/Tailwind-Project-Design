@@ -104,3 +104,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+.sidebarnav{
+    @apply text-sm md:text-lg text-center py-2 border border-transparent hover:bg-gray-400/25 hover:border-gray-700  scale-105
+}
